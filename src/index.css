@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	/* --background-color: #01152a; */
+	--background-color: #eeeff0;
+}
+
+.mc {
+	@apply container mx-auto;
+}
+
+.section-bg {
+	padding: 100px 50px 100px 90px;
+	background: var(--background-color) url("./assets/body-bg-pattern.svg");
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
