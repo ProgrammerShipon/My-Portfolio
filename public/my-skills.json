@@ -1,0 +1,52 @@
+{
+   "skills": [
+      {
+         "name": "HTML",
+         "icon": "AiOutlineHtml5"
+      },
+      {
+         "name": "CSS",
+         "icon": "SiCss3"
+      },
+      {
+         "name": "Tailwind CSS",
+         "icon": "SiTailwindcss"
+      },
+      {
+         "name": "Bootstrap CSS",
+         "icon": "SiBootstrap"
+      },
+      {
+         "name": "JavaScript",
+         "icon": "SiJavascript"
+      },
+      {
+         "name": "React.js",
+         "icon": "FaReact"
+      },
+      {
+         "name": "Express.js",
+         "icon": "FaServer"
+      },
+      {
+         "name": "Node.js",
+         "icon": "FaNodeJs"
+      },
+      {
+         "name": "MongoDB",
+         "icon": "SiMongodb"
+      },
+      {
+         "name": "Git",
+         "icon": "FaGitAlt"
+      },
+      {
+         "name": "Visual Studio",
+         "icon": "SiVisualstudio"
+      },
+      {
+         "name": "Leader Ship",
+         "icon": "FaUserTie"
+      }
+   ]
+}
