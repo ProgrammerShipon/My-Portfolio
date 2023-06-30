@@ -23,7 +23,9 @@ const Projects = () => {
 				</div>
 				<div className="flex flex-wrap -m-4">
 					{projects &&
-						projects.map((project, i) => <Project key={i} project={project} />)}
+						projects.map((project, i) => (
+							<Project key={i} i={i} project={project} />
+						))}
 				</div>
 			</div>
 		</section>

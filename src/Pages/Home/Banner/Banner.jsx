@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import myImg from "../../../assets/My-Image/Banner-1.png";
+import useAos from "../../../Hooks/useAos";
 
 const Banner = () => {
+	useAos();
+
 	return (
 		<>
 			<section className="text-gray-600 section-bg body-font">
@@ -46,7 +49,10 @@ const Banner = () => {
 						</div>
 					</div>
 					<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center items-center">
-						<figure className="border-4 border-blue-500 shadow-xl">
+						<figure
+							data-aos="zoom-in"
+							className="border-4 border-blue-500 shadow-xl"
+						>
 							<img
 								className="object-cover object-center"
 								alt="hero"

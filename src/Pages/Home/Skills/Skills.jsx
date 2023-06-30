@@ -1,26 +1,10 @@
-import {
-	FaReact,
-	FaServer,
-	FaNodeJs,
-	FaGitAlt,
-	FaGithub,
-	FaUserTie,
-} from "react-icons/fa";
-import {
-	SiCss3,
-	SiTailwindcss,
-	SiBootstrap,
-	SiMongodb,
-	SiAdobephotoshop,
-	SiVisualstudio,
-	SiJavascript,
-	SiLeaderprice,
-} from "react-icons/si";
-import { AiOutlineHtml5 } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
+import useAos from "../../../Hooks/useAos";
+import Skill from "./Skill";
 
 const Skills = () => {
+	useAos();
 	const [skillsData, setSkillsData] = useState([]);
 
 	useEffect(() => {
@@ -39,57 +23,14 @@ const Skills = () => {
 
 				<div>
 					<ul className="grid items-center justify-center text-center grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
-						{skillsData.map((skill) => (
-							<li key={skill.name}>
-								<div className="min-w-fit flex justify-between items-center gap-5 py-5 px-7 hover:bg-slate-200 transition duration-500 cursor-pointer bg-slate-100 shadow-md rounded-md">
-									<div className="text-4xl mb-3 text-slate-600">
-										{getIconComponent(skill.icon)}
-									</div>
-
-									<h3 className="font-semibold text-lg ">{skill.name}</h3>
-								</div>
-							</li>
+						{skillsData.map((skill, i) => (
+							<Skill skill={skill} i={i} />
 						))}
 					</ul>
 				</div>
 			</div>
 		</section>
 	);
-};
-
-const getIconComponent = (iconName) => {
-	switch (iconName) {
-		case "AiOutlineHtml5":
-			return <AiOutlineHtml5 />;
-		case "SiCss3":
-			return <SiCss3 />;
-		case "SiTailwindcss":
-			return <SiTailwindcss />;
-		case "SiBootstrap":
-			return <SiBootstrap />;
-		case "FaReact":
-			return <FaReact />;
-		case "FaServer":
-			return <FaServer />;
-		case "FaNodeJs":
-			return <FaNodeJs />;
-		case "SiMongodb":
-			return <SiMongodb />;
-		case "FaGitAlt":
-			return <FaGitAlt />;
-		case "FaGithub":
-			return <FaGithub />;
-		case "SiAdobephotoshop":
-			return <SiAdobephotoshop />;
-		case "SiVisualstudio":
-			return <SiVisualstudio />;
-		case "SiJavascript":
-			return <SiJavascript />;
-		case "FaUserTie":
-			return <FaUserTie />;
-		default:
-			return null;
-	}
 };
 
 export default Skills;

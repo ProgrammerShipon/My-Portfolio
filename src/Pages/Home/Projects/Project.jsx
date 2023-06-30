@@ -1,10 +1,18 @@
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { useState } from "react";
+import useAos from "../../../Hooks/useAos";
 
-const Project = ({ project }) => {
+const Project = ({ project, i }) => {
+	useAos();
 	const [favarite, setFavarite] = useState(false);
 	return (
-		<div className="xl:w-1/3 md:w-1/2 p-4">
+		<div
+			data-aos="fade-right"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine"
+			data-aos-delay={300 * i}
+			className="xl:w-1/3 md:w-1/2 p-4"
+		>
 			<div className="bg-gray-100 p-6 rounded-lg">
 				<img
 					className="h-[200px] rounded w-full object-cover object-center mb-6"
