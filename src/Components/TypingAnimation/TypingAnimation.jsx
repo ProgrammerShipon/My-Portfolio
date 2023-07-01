@@ -7,23 +7,17 @@ const TypingAnimation = () => {
 		<>
 			<TypeAnimation
 				sequence={[
-					1500,
-					() => {
-						setTypingStatus("Typing...");
-					},
-					"Use callback-functions to trigger events",
-					() => {
-						setTypingStatus("Done Typing");
-					},
-					1000,
-					() => {
-						setTypingStatus("Deleting...");
-					},
-					"",
-					() => {
-						setTypingStatus("Done Deleting");
-					},
+					"Web Developer",
+					2000,
+					"JavaScript Developer",
+					2000,
+					"React Developer",
+					2000,
+					"MERN Stack Developer",
+					2000,
+					"Front-End Developer",
 				]}
+				style={{ fontSize: "1.5em" }}
 				repeat={Infinity}
 			/>
 		</>

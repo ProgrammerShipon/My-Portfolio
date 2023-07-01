@@ -13,7 +13,7 @@ const Projects = () => {
 	}, []);
 
 	return (
-		<section className="text-gray-600 body-font section-bg">
+		<section id="projects" className="text-gray-600 body-font section-bg">
 			<div className="mc px-5">
 				<div>
 					<SectionTitle

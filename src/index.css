@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	/* --background-color: #01152a; */
 	--background-color: #eeeff0;
@@ -12,9 +16,10 @@
 }
 
 .section-bg {
-	padding: 60px 0;
 	background: var(--background-color) url("./assets/body-bg-pattern.svg");
 	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
+
+	@apply md:py-[100px] py-5;
 }

@@ -10,7 +10,7 @@ const Banner = () => {
 
 	return (
 		<>
-			<section className="text-gray-600 section-bg body-font">
+			<section id="home" className="text-gray-600 section-bg body-font">
 				<div className="mc flex px-5 md:flex-row flex-col items-center">
 					<div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex gap-4 flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 						<h3 className="text-md font-semibold"> HEY THERE 🙂, I{`'`}M </h3>

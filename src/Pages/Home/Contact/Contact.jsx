@@ -7,7 +7,7 @@ const Contact = () => {
 	useAos();
 
 	return (
-		<section className="text-gray-600 body-font relative">
+		<section id="Contact" className="section-bg body-font relative">
 			<div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
 				<div
 					data-aos="fade-right"
@@ -52,7 +52,15 @@ const Contact = () => {
 					</div>
 				</div>
 
-				<Form />
+				<div
+					data-aos="fade-left"
+					data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="500"
+					className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 px-8 mt-8 md:mt-0"
+				>
+					<Form />
+				</div>
 			</div>
 		</section>
 	);
