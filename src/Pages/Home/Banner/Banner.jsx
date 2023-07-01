@@ -26,7 +26,7 @@ const Banner = () => {
 							designing unique brand identities and building optimal backend
 							systems.
 						</p>
-						<div className="flex justify-center gap-5">
+						<div className="flex justify-center flex-col md:flex-row gap-5">
 							<Link
 								to=""
 								className="relative inline-block text-lg group shadow-lg"

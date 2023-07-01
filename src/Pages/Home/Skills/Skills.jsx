@@ -22,7 +22,7 @@ const Skills = () => {
 				/>
 
 				<div>
-					<ul className="grid items-center justify-center text-center grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+					<ul className="grid items-center justify-center text-center grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 px-6">
 						{skillsData.map((skill, i) => (
 							<Skill skill={skill} i={i} />
 						))}

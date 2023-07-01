@@ -2,13 +2,15 @@ import React from "react";
 import SocialsLink from "../../../Components/SocialsLink/SocialsLink";
 import useAos from "../../../Hooks/useAos";
 import Form from "./Form";
+import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 
 const Contact = () => {
 	useAos();
 
 	return (
 		<section id="Contact" className="section-bg body-font relative">
-			<div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+			<SectionTitle title="Contact and My Location" />
+			<div className="mc px-5 flex sm:flex-nowrap flex-wrap">
 				<div
 					data-aos="fade-right"
 					data-aos-offset="300"
@@ -28,8 +30,8 @@ const Contact = () => {
 						loading="lazy"
 						referrerPolicy="no-referrer-when-downgrade"
 					/>
-					<div className="bg-white w-11/12 mx-auto relative flex flex-wrap py-6 rounded shadow-md">
-						<div className="lg:w-1/2 px-6">
+					<div className="bg-white md:w-11/12 mx-auto relative flex flex-wrap py-6 rounded shadow-md">
+						<div className="lg:w-1/2 px-3 md:px-6">
 							<h2 className="title-font font-semibold text-gray-900 tracking-widest text-lg mb-1">
 								ADDRESS
 							</h2>
@@ -37,7 +39,7 @@ const Contact = () => {
 
 							<SocialsLink />
 						</div>
-						<div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+						<div className="lg:w-1/2 px-3 md:px-6 mt-4 lg:mt-0">
 							<h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
 								EMAIL
 							</h2>
@@ -57,7 +59,7 @@ const Contact = () => {
 					data-aos-anchor="#example-anchor"
 					data-aos-offset="500"
 					data-aos-duration="500"
-					className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 px-8 mt-8 md:mt-0"
+					className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 px-8 py-8 mt-8 md:mt-0 rounded"
 				>
 					<Form />
 				</div>
