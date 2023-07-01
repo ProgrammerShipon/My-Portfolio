@@ -10,23 +10,26 @@ const SocialsLink = () => {
 					to="https://www.linkedin.com/in/shipon-hossen-raju-7927211a2/"
 					className="text-gray-500"
 				>
-					<FaLinkedin className="text-2xl cursor-pointer " />
+					<FaLinkedin className="text-2xl cursor-pointer hover:scale-125 transition duration-300" />
 				</Link>
+
 				<Link
 					to="https://www.facebook.com/ShiponHossenRaju"
-					className="text-gray-500"
+					className="text-2xl cursor-pointer hover:scale-125 transition duration-300"
 				>
 					<FaFacebook className="text-2xl cursor-pointer " />
 				</Link>
+
 				<Link
 					to={`https://twitter.com/ShiponHossenRa2`}
-					className=" text-gray-500"
+					className="text-2xl cursor-pointer hover:scale-125 transition duration-300"
 				>
 					<FaTwitter className="text-2xl cursor-pointer " />
 				</Link>
+
 				<Link
 					to={`https://www.instagram.com/shiponhossenraju/`}
-					className=" text-gray-500"
+					className="text-2xl cursor-pointer hover:scale-125 transition duration-300"
 				>
 					<FaInstagram className="text-2xl cursor-pointer " />
 				</Link>

@@ -12,7 +12,7 @@
 }
 
 .section-bg {
-	padding: 100px 50px 100px 90px;
+	padding: 60px 0;
 	background: var(--background-color) url("./assets/body-bg-pattern.svg");
 	background-position: top;
 	background-size: contain;

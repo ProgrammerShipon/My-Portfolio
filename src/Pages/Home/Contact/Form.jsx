@@ -16,10 +16,10 @@ const Form = () => {
 
 		emailjs
 			.sendForm(
-				"service_zt7xdx7",
-				"template_k2cwyyp",
+				import.meta.env.VITE_EmailServiceKey,
+				import.meta.env.VITE_EmailTemplateKey,
 				form.current,
-				"x6qn7NEX-mMMKSjD1"
+				import.meta.env.VITE_EmailPublicKey
 			)
 			.then(
 				(result) => {

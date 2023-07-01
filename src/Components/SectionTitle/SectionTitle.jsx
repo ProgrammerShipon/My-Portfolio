@@ -11,6 +11,7 @@ const SectionTitle = ({ title, description }) => {
 			{title && (
 				<h1 className="text-2xl font-bold text-center py-6">{title}</h1>
 			)}
+
 			{description && <div className="">{description}</div>}
 		</div>
 	);

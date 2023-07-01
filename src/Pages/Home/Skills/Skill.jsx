@@ -21,7 +21,7 @@ const Skill = ({ skill, i }) => {
 	return (
 		<>
 			<li data-aos="zoom-in-right" data-aos-delay={100 * i}>
-				<div className="min-w-fit flex justify-between items-center gap-5 py-5 px-7 hover:bg-slate-200 transition duration-500 cursor-pointer bg-slate-100 shadow-md rounded-md">
+				<div className="min-w-fit hover:scale-110 flex justify-between items-center gap-5 py-5 px-7 hover:bg-slate-300 transition duration-500 cursor-pointer bg-slate-100 shadow-md rounded-md">
 					<div className="text-4xl mb-3 text-slate-600">
 						{getIconComponent(skill.icon)}
 					</div>
