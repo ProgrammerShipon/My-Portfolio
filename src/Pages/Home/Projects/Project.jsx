@@ -1,6 +1,7 @@
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { useState } from "react";
 import useAos from "../../../Hooks/useAos";
+import PSlider from "./PSlider";
 
 const Project = ({ project, i }) => {
 	useAos();
@@ -11,14 +12,12 @@ const Project = ({ project, i }) => {
 			data-aos-offset="300"
 			data-aos-easing="ease-in-sine"
 			data-aos-delay={300 * i}
-			className="xl:w-1/3 md:w-1/2 p-4"
+			className="lg:w-1/3 md:w-1/2 p-4 w-full"
 		>
-			<div className="bg-gray-100 p-6 rounded-lg">
-				<img
-					className="h-[200px] rounded w-full object-cover object-center mb-6"
-					src="https://dummyimage.com/721x401"
-					alt="content"
-				/>
+			<div className="bg-slate-100 cursor-pointer hover:bg-slate-200 transition-all duration-300 p-6 rounded-lg">
+				<div className="h-[200px] rounded w-full overflow-y-scroll object-cover object-center mb-6">
+					<PSlider PImg={project?.projectImg} />
+				</div>
 				<h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
 					Shipon Hossen Raju
 				</h3>
@@ -44,7 +43,7 @@ const Project = ({ project, i }) => {
 					))}
 				</p>
 				<p className="leading-relaxed text-base">
-					{project?.projectDetails.slice(0, 100) + "..."}
+					{project?.projectDetails.slice(0, 80) + "..."}
 				</p>
 			</div>
 		</div>

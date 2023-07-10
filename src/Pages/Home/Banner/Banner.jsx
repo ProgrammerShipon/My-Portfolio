@@ -89,10 +89,10 @@ const Banner = () => {
 					<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center items-center">
 						<figure
 							data-aos="zoom-in"
-							className="border-4 border-blue-500 shadow-xl"
+							className="border-4 border-blue-500 shadow-xl transition-transform duration-300 transform hover:scale-105 cursor-pointer"
 						>
 							<LazyLoadImage
-								className="object-cover object-center"
+								className="object-cover object-center h-full w-full "
 								effect="blur"
 								alt="hero"
 								src={myImg}

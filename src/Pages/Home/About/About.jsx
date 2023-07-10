@@ -11,7 +11,7 @@ const About = () => {
 
 				<div className="flex flex-wrap items-start p-6">
 					<div className="md:w-1/2 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b-2 border-gray-400">
-						<figure className="flex justify-center items-center w-full">
+						<figure className="flex justify-center items-center w-full transition-transform duration-300 transform hover:scale-105 cursor-pointer">
 							<LazyLoadImage
 								effect="blur"
 								className="object-cover object-center w-[300px] h-auto transform scale-x-[-1]"
