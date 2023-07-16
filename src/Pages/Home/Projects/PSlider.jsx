@@ -21,8 +21,6 @@ import {
 } from "swiper";
 
 const PSlider = ({ PImg }) => {
-	console.log("project image -> ", PImg);
-
 	return (
 		<Swiper
 			// direction={"vertical"}
