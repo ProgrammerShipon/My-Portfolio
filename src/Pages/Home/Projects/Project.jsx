@@ -18,7 +18,7 @@ const Project = ({ project, i }) => {
 			className="lg:w-1/3 md:w-1/2 p-4 w-full"
 		>
 			<div className="bg-slate-100 cursor-pointer hover:bg-slate-200 transition-all duration-300 p-6 rounded-lg shadow hover:shadow-md">
-				<div className="h-[200px] rounded w-full overflow-y-scroll object-cover object-center mb-6">
+				<div className="h-[200px] rounded w-full overflow-y-scroll scrollbar object-cover object-center mb-6">
 					<PSlider PImg={project?.projectImg} />
 				</div>
 				<h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">

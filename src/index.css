@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+	.scrollbar-medium::-webkit-scrollbar {
+		width: 12px;
+	}
+}
+
 html {
 	scroll-behavior: smooth;
+
+	@apply scrollbar;
+}
+
+img {
+	@apply select-none;
 }
 
 :root {
@@ -22,4 +34,29 @@ html {
 	background-repeat: no-repeat;
 
 	@apply md:py-[100px] py-5;
+}
+
+/* For Firefox Browser */
+.scrollbar {
+	scrollbar-width: thin;
+	scrollbar-color: #000 #fff;
+}
+
+/* For Chrome, EDGE, Opera, Others */
+.scrollbar::-webkit-scrollbar {
+	width: 7px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	background: #000000;
+
+	@apply transition duration-300;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #7d7d7d;
 }

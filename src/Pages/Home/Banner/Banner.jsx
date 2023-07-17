@@ -10,14 +10,18 @@ const Banner = () => {
 
 	return (
 		<>
-			<section id="home" className="text-gray-600 section-bg body-font">
-				<div className="mc flex px-5 md:flex-row flex-col items-center">
+			<section
+				id="home"
+				className="text-gray-600 section-bg body-font md:mt-10"
+			>
+				<div className="mc flex px-5 md:flex-row flex-col-reverse gap-5 items-center">
 					<div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex gap-4 flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
 						<h3 className="text-md font-semibold"> HEY THERE 🙂, I{`'`}M </h3>
 						<h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900">
 							Shipon Hossen Raju
 						</h1>
 
+						{/* text typing */}
 						<TypingAnimation />
 
 						<p className="leading-relaxed">
@@ -43,7 +47,7 @@ const Banner = () => {
 							</Link>
 
 							<a
-								href="../../../assets/files/Shipon-WD-Resume.pdf"
+								href="../../../assets/files/Shipon-WD-Resume.1.pdf"
 								download={true}
 								class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-200 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
 							>
@@ -86,18 +90,21 @@ const Banner = () => {
 							</a>
 						</div>
 					</div>
+
 					<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center items-center">
-						<figure
-							data-aos="zoom-in"
-							className="border-4 border-blue-500 shadow-xl transition-transform duration-300 transform hover:scale-105 cursor-pointer"
-						>
-							<LazyLoadImage
-								className="object-cover object-center h-full w-full "
-								effect="blur"
-								alt="hero"
-								src={myImg}
-							/>
-						</figure>
+						<div className="transform hover:scale-105 transition duration-300">
+							<figure
+								data-aos="zoom-in"
+								className="border-4 border-blue-500 shadow-xl transition-transform duration-300 transform hover:scale-105 cursor-pointer"
+							>
+								<LazyLoadImage
+									className="object-cover object-center h-full w-full "
+									effect="blur"
+									alt="hero"
+									src={myImg}
+								/>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</section>
